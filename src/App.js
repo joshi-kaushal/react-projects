@@ -1,10 +1,13 @@
 import './App.css';
-
+import projects from './Projects';
+import BirthdayReminder from './Projects/BirthdayReminder/BirthdayReminder'
 function App() {
   return (
-    <main className="App">
+    <div className="App">
       <h1>React Projects</h1>
-    </main>
+
+      <BirthdayReminder />
+    </div>
   );
 }
 
