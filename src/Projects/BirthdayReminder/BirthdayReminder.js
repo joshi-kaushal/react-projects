@@ -12,7 +12,11 @@ function BirthdayReminder() {
 				<section className="container">
 					<h3>{people.length} Birthdays today!</h3>
 					<List people={people} />
-					<button onClick={() => setPeople([])}>Reset</button>
+					{
+						people.length > 0
+							? <button onClick={() => setPeople([])}>Reset</button>
+							: <button onClick={() => setPeople(data)}>Load Birthdays</button>
+					}	
 				</section>
 			</main>
 		</div>
