@@ -7,7 +7,6 @@ function Accordion() {
 
 	const RenderQuestions = () => {
 		return questions.map(question => {
-			console.log(question);
 			return <SingleQuestion question={question} />
 		})
 	}
