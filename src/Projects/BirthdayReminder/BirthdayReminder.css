@@ -83,7 +83,7 @@ h1 {
 }
 h2 {
   font-size: 2rem;
-  color: var(--clr-primary-4);
+  color: var(clr-primary-4);
 }
 h3 {
   font-size: 1.25rem;

@@ -1,8 +1,9 @@
-import './App.css';
 import projects from './Projects';
+import Accordion from './Projects/Accordion/Accordion';
 import BirthdayReminder from './Projects/BirthdayReminder/BirthdayReminder'
 import Reviews from './Projects/Reviews/Reviews'
 import Tours from './Projects/Tours/ToursApp';
+
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <BirthdayReminder />
       <Reviews />
       <Tours />
+      <Accordion />
     </div>
   );
 }
