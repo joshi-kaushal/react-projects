@@ -7,20 +7,20 @@ function Menu(props) {
 
 			return (
 				<article key={id} className='menu-item'>
-					<img src={img} alt={title} className='photo' />
+					<img src={img} alt={title} className='sm:h-36 md:h-48 w-full border-2 rounded object-cover border-gold' />
 					<div className="item-info">
-						<header>
-							<h4>{title}</h4>
-							<h4>{price}</h4>
+						<header className='flex justify-between border-b-2'>
+							<h4 className='mb-2 font-semibold'>{title}</h4>
+							<h4 className='text-gold font-semibold'>{price}</h4>
 						</header>
-						<div className='item-text'>{desc}</div>
+						<div className='mb-0 pt-4 capitalize'>{desc}</div>
 					</div>
 				</article>
 			)
 		})
 	}
 	
-	return <div>
+	return <div className='w-11/12 my-0 mx-auto max-w-7xl lg:grid grid-cols-2 gap-y-12 gap-x-8 justify-center'>
 		<RenderMenu menu={props.menu} />
 	</div>
 }

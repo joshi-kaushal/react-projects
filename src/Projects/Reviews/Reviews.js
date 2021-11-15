@@ -1,6 +1,6 @@
 import React from 'react';
-import './Reviews.css'
 import Review from './Review';
+// import './Reviews.css'
 function Reviews() {
 	return <main>
 		<section className='container'>

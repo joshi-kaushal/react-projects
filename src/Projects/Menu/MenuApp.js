@@ -21,9 +21,9 @@ function MenuApp() {
 
 
 	return (
-		<section className='menu-section'>
-			<div className='title'>
-				<h1>Today's Menu</h1>
+		<section className='w-10/12 my-0 mx-auto md:w-8/12 py-20 px-0'>
+			<div className='text-center mb-8'>
+				<h1 className='text-5xl font-semibold text-gold'>Today's Menu</h1>
 				<div className='underline'></div>
 			</div>
 

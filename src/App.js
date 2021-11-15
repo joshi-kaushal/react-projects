@@ -9,7 +9,7 @@ import Tours from './Projects/Tours/ToursApp';
 function App() {
   return (
     <div className="App">
-      <h1>React Projects</h1>
+      <h1 className='text-center font-bold mt-4'>React Projects</h1>
       {/* <BirthdayReminder />
       <Reviews />
       <Tours />
