@@ -2,12 +2,11 @@ import React, { useState } from 'react';
 import questions from './data';
 // import data from './data';
 import SingleQuestion from './Question';
-import './Accordion.css'
+// import './Accordion.css'
 function Accordion() {
 
 	const RenderQuestions = () => {
 		return questions.map(question => {
-			console.log(question);
 			return <SingleQuestion question={question} />
 		})
 	}
