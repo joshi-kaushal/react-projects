@@ -4,7 +4,7 @@ import BirthdayReminder from './Projects/BirthdayReminder/BirthdayReminder'
 import MenuApp from './Projects/Menu/MenuApp';
 import Reviews from './Projects/Reviews/Reviews'
 import Tours from './Projects/Tours/ToursApp';
-
+import Tabs from './Projects/Tabs/Tabs'
 
 function App() {
   return (
@@ -13,9 +13,10 @@ function App() {
       {/* <BirthdayReminder />
       <Reviews />
       <Tours />
-      <Accordion /> */}
+      <Accordion /> 
+      <MenuApp/> */}
 
-      <MenuApp/>
+      <Tabs />
     </div>
   );
 }
