@@ -10,13 +10,14 @@ function App() {
   return (
     <div className="App">
       <h1 className='text-center font-bold mt-4'>React Projects</h1>
-      {/* <BirthdayReminder />
-      <Reviews />
+      <BirthdayReminder />
+      {/* <Reviews />
       <Tours />
       <Accordion /> 
-      <MenuApp/> */}
+      <MenuApp/> 
+      <Tabs />*/}
 
-      <Tabs />
+      
     </div>
   );
 }

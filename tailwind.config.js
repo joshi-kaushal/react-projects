@@ -1,3 +1,8 @@
+const BirthdayReminder = {
+  'pink': '#f28ab2',
+  
+}
+
 const menuColor = {
   "white": '#fff',
   "gold": '#c59d5f',
