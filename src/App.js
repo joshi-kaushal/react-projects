@@ -5,18 +5,19 @@ import MenuApp from './Projects/Menu/MenuApp';
 import Reviews from './Projects/Reviews/Reviews'
 import Tours from './Projects/Tours/ToursApp';
 import Tabs from './Projects/Tabs/Tabs'
+import Slider from './Projects/Slider/Slider'
 
 function App() {
   return (
     <div className="App">
       <h1 className='text-center font-bold mt-4'>React Projects</h1>
-      <BirthdayReminder />
-      {/* <Reviews />
+      {/* <BirthdayReminder />
+       <Reviews />
       <Tours />
       <Accordion /> 
       <MenuApp/> 
       <Tabs />*/}
-
+      <Slider />
       
     </div>
   );
