@@ -54,7 +54,7 @@ function Slider() {
 			</div>
 
 			{/* Main Section */}
-			<div className='my-0 mx-auto mt-16 max-w-880 h-450 text-center relative flex overflow-hidden '>
+			<div className=' my-0 mx-auto mt-16 max-w-880 h-450 text-center relative flex overflow-hidden '>
 				{
 					people.map((person, personIndex) => {
 						const { id, image, name, title, quote } = person;
@@ -75,7 +75,7 @@ function Slider() {
 
 						// Actual Slides
 						return (
-							<article className={`${position} 'absolute top-0 left-0 w-full h-full transition-all duration-300 ease-linear'`} key={id}>
+							<article className={`${position} ' absolute top-0 left-0 w-full h-full transition-all duration-300 ease-linear'`} key={id}>
 								<img src={image} alt={name} className='inline-block border rounded-full border-sliderColor-ternary mb-4 h-40 w-40 object-cover shadow-darkShadow' />
 								<h4 className='uppercase mb-1 text-sliderColor-primary font-semibold'>{name}</h4>
 								<p className='capitalize mb-3 text-sliderColor-secondary'>{title}</p>
@@ -92,7 +92,7 @@ function Slider() {
 					<FaChevronLeft />
 				</SliderButton>
 
-				<SliderButton action='next' onClick={() => { setIndex(index - 1) }}>
+				<SliderButton action='next' onClick={() => { setIndex(index + 1) }}>
 					<FaChevronRight />
 				</SliderButton>
 
