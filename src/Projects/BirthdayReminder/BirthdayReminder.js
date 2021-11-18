@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import data from './data';
 import List from './List';
-// import './BirthdayReminder.css';
+
 function BirthdayReminder() {
 	const [people, setPeople] = useState(data);
 
