@@ -6,6 +6,26 @@ function Slider() {
 	const [people, setPeople] = useState(data)
 	const [index, setIndex] = useState(0)
 
+	// Tailwind CSS Button Component
+	const SliderButton = (props) => (
+		<div
+			className=
+			{`	${props.action === 'prev' ? 'left-0' : 'right-0'}
+				absolute top-48
+				transform -translate-y-50
+				text-white bg-sliderColor-secondary hover:bg-sliderColor-primary
+				grid place-items-center
+				border border-transparent rounded
+				h-7 w-7
+				text-base cursor-pointer
+				transition-all`
+			}
+			onClick={props.onClick}
+		>
+			{props.children}
+		</div>
+	)
+
 	// Handle underflow/overflow for index-people relation
 	useEffect(() => {
 		const lastIndex = people.length - 1;
@@ -33,6 +53,7 @@ function Slider() {
 				</h2>
 			</div>
 
+			{/* Main Section */}
 			<div className='my-0 mx-auto mt-16 max-w-880 h-450 text-center relative flex overflow-hidden '>
 				{
 					people.map((person, personIndex) => {
@@ -52,6 +73,7 @@ function Slider() {
 							position = 'opacity-0 transform -translate-x-100';
 						}
 
+						// Actual Slides
 						return (
 							<article className={`${position} 'absolute top-0 left-0 w-full h-full transition-all duration-300 ease-linear'`} key={id}>
 								<img src={image} alt={name} className='inline-block border rounded-full border-sliderColor-ternary mb-4 h-40 w-40 object-cover shadow-darkShadow' />
@@ -65,12 +87,14 @@ function Slider() {
 					})
 				}
 
-				<button className="prev" onClick={() => setIndex(index - 1)}>
+				{/* Slider Buttons */}
+				<SliderButton SliderButton action='prev' onClick={() => { setIndex(index - 1) }}>
 					<FaChevronLeft />
-				</button>
-				<button className="next" onClick={() => setIndex(index + 1)}>
+				</SliderButton>
+
+				<SliderButton action='next' onClick={() => { setIndex(index - 1) }}>
 					<FaChevronRight />
-				</button>
+				</SliderButton>
 
 			</div>
 		</section>
