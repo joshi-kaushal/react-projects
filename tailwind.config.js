@@ -1,6 +1,6 @@
 const BirthdayReminder = {
   'pink': '#f28ab2',
-  
+
 }
 
 const menuColor = {
@@ -19,6 +19,12 @@ const tabsColor = {
   "FontLighter": "hsl(212, 33%, 89%)"
 }
 
+const sliderColor = {
+  "primary": "hsl(21, 62%, 45%)",
+  'secondary': "hsl(210, 22%, 49%)",
+  "ternary": "hsl(209, 34%, 30%)"
+}
+
 module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   darkMode: false, // or 'media' or 'class'
@@ -27,13 +33,30 @@ module.exports = {
       colors: {
         menuColor,
         tabsColor,
+        sliderColor
       },
       gridTemplateColumns: {
         'auto': 'auto 1fr'
       },
       boxShadow: {
+        lightShadow: "0 5px 15px rgba(0, 0, 0, 0.1)",
+        darkShadow: "0 5px 15px rgba(0, 0, 0, 0.2)",
         tsm: "0 2px #2caeba",
         tmd: "-2px 0 #2caeba"
+      },
+      spacing: {
+        "50": "50%",
+        "100": "100%",
+      },
+      height: {
+        "450": "450px",
+        "80vw": "80vw",
+        "90vw": "90vw",
+        "95vw": "95vw",
+        "880": "880px"
+      },
+      maxWidth: {
+        "880": "880px"
       }
     },
   },
