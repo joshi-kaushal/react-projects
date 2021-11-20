@@ -11,8 +11,8 @@ function App() {
   return (
     <div className="App">
       <h1 className='text-center font-bold mt-4 text-5xl'>React Projects</h1>
-      {/* <BirthdayReminder />
-       <Reviews />
+      <BirthdayReminder />
+      {/*  <Reviews />
       <Tours />
       <Accordion /> 
       <MenuApp/> 

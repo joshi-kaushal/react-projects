@@ -1,6 +1,5 @@
 const BirthdayReminder = {
   'pink': '#f28ab2',
-
 }
 
 const menuColor = {
@@ -31,6 +30,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        BirthdayReminder,
         menuColor,
         tabsColor,
         sliderColor
