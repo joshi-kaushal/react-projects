@@ -6,14 +6,16 @@ import Reviews from './Projects/Reviews/Reviews'
 import Tours from './Projects/Tours/ToursApp';
 import Tabs from './Projects/Tabs/Tabs'
 import Slider from './Projects/Slider/Slider'
+import LoremIpsum from './Projects/LoremIpsum/LoremIpsum'
 
 function App() {
   return (
     <div className="App">
       <h1 className='text-center font-bold m-4 text-5xl'>React Projects</h1>
 
-      <Tours />
+      <LoremIpsum />
       {/*  <BirthdayReminder />
+      <Tours />
       <Reviews />
       <Accordion /> 
       <MenuApp/> 
