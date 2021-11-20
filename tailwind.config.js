@@ -37,6 +37,12 @@ const reviewsColor = {
   "secondarySecondary": "hsl(205, 100%, 96%)",
 }
 
+const toursColor = {
+  "primary": "hsl(205, 78%, 60%)",
+  "secondary": "hsl(205, 100%, 96%)",
+  "red": "hsl(360, 67%, 44%)",
+}
+
 module.exports = {
   purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   darkMode: false, // or "media" or "class"
@@ -48,7 +54,8 @@ module.exports = {
         tabsColor,
         sliderColor,
         accordionColor,
-        reviewsColor
+        reviewsColor,
+        toursColor
       },
       gridTemplateColumns: {
         "auto": "auto 1fr",

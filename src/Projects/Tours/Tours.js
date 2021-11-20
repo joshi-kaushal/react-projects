@@ -3,9 +3,9 @@ import Tour from './Tour';
 const Tours = ({ tours, removeTour }) => {
 	return (
 		<section>
-			<div className='title'>
-				<h2>{tours ? 'Tours' : 'No Tours Available'}</h2>
-				<div className='underline'></div>
+			<div className='text center mb-16'>
+				<h2 className='text-center text-4xl font-bold text-toursColor-primary'>{tours ? 'Tours' : 'No Tours Available'}</h2>
+				<div className='w-24 h-1 bg-toursColor-primary mx-auto'></div>
 			</div>
 
 			<div>
