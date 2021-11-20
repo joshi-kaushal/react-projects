@@ -12,9 +12,9 @@ function App() {
     <div className="App">
       <h1 className='text-center font-bold m-4 text-5xl'>React Projects</h1>
 
-      <Accordion /> 
-      {/*  <BirthdayReminder />
       <Reviews />
+      {/*  <BirthdayReminder />
+      <Accordion /> 
       <Tours />
       <MenuApp/> 
       <Tabs />

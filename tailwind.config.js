@@ -30,6 +30,13 @@ const accordionColor = {
   "grey": "#eae6eb"
 }
 
+const reviewsColor = {
+  "primaryDark": "hsl(205, 86%, 17%)",
+  "primaryLight": "hsl(205, 78%, 60%)",
+  "secondaryDark": "hsl(205, 90%, 76%)",
+  "secondarySecondary": "hsl(205, 100%, 96%)",
+}
+
 module.exports = {
   purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   darkMode: false, // or "media" or "class"
@@ -40,7 +47,8 @@ module.exports = {
         menuColor,
         tabsColor,
         sliderColor,
-        accordionColor
+        accordionColor,
+        reviewsColor
       },
       gridTemplateColumns: {
         "auto": "auto 1fr",
@@ -64,6 +72,7 @@ module.exports = {
         "880": "880px"
       },
       width: {
+        "150": "150px",
         "450": "450px",
         "80vw": "80vw",
         "90vw": "90vw",
