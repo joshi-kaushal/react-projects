@@ -1,10 +1,10 @@
 const BirthdayReminder = {
-  'pink': '#f28ab2',
+  "pink": "#f28ab2",
 }
 
 const menuColor = {
-  "white": '#fff',
-  "gold": '#c59d5f',
+  "white": "#fff",
+  "gold": "#c59d5f",
 }
 
 const tabsColor = {
@@ -20,23 +20,31 @@ const tabsColor = {
 
 const sliderColor = {
   "primary": "hsl(21, 62%, 45%)",
-  'secondary': "hsl(210, 22%, 49%)",
+  "secondary": "hsl(210, 22%, 49%)",
   "ternary": "hsl(209, 34%, 30%)"
 }
 
+const accordionColor = {
+  "red": "#b4345c",
+  "purple": "#4b145b",
+  "grey": "#eae6eb"
+}
+
 module.exports = {
-  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
-  darkMode: false, // or 'media' or 'class'
+  purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
+  darkMode: false, // or "media" or "class"
   theme: {
     extend: {
       colors: {
         BirthdayReminder,
         menuColor,
         tabsColor,
-        sliderColor
+        sliderColor,
+        accordionColor
       },
       gridTemplateColumns: {
-        'auto': 'auto 1fr'
+        "auto": "auto 1fr",
+        "2501fr": "250px 1fr"
       },
       boxShadow: {
         lightShadow: "0 5px 15px rgba(0, 0, 0, 0.1)",
@@ -55,8 +63,21 @@ module.exports = {
         "95vw": "95vw",
         "880": "880px"
       },
+      width: {
+        "450": "450px",
+        "80vw": "80vw",
+        "90vw": "90vw",
+        "95vw": "95vw",
+        "880": "880px"
+      },
+      minWidth: {
+        "2": "2rem"
+      },
       maxWidth: {
         "880": "880px"
+      },
+      borderRadius: {
+        "50": "50%"
       }
     },
   },
