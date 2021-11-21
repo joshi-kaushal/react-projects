@@ -7,14 +7,16 @@ import Tours from './Projects/Tours/ToursApp';
 import Tabs from './Projects/Tabs/Tabs'
 import Slider from './Projects/Slider/Slider'
 import LoremIpsum from './Projects/LoremIpsum/LoremIpsum'
+import ColorGenerator from './Projects/ColorGenerator/ColorGenerator'
 
 function App() {
   return (
     <div className="App">
       <h1 className='text-center font-bold m-4 text-5xl'>React Projects</h1>
 
-      <LoremIpsum />
+      <ColorGenerator />
       {/*  <BirthdayReminder />
+      <LoremIpsum />
       <Tours />
       <Reviews />
       <Accordion /> 
