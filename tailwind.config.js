@@ -55,6 +55,7 @@ const colorGenerator = {
   "secondary": "hsl(209, 61%, 16%)",
   "ternary": "hsl(360, 67%, 44%)",
 }
+
 module.exports = {
   purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   darkMode: false, // or "media" or "class"
@@ -73,7 +74,11 @@ module.exports = {
       },
       gridTemplateColumns: {
         "auto": "auto 1fr",
-        "2501fr": "250px 1fr"
+        "2501fr": "250px 1fr",
+        "color": "repeat(auto-fit, minmax(223.33px, 1fr))"
+      },
+      gridTemplateRows: {
+        "color": "repeat(auto-fit, minmax(96px, 1fr))"
       },
       boxShadow: {
         lightShadow: "0 5px 15px rgba(0, 0, 0, 0.1)",
@@ -108,6 +113,9 @@ module.exports = {
       },
       borderRadius: {
         "50": "50%"
+      },
+      minHeight: {
+        "vhminus100": "calc(100vh - 100px)"
       }
     },
   },
