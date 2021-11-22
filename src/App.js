@@ -8,14 +8,16 @@ import Tabs from './Projects/Tabs/Tabs'
 import Slider from './Projects/Slider/Slider'
 import LoremIpsum from './Projects/LoremIpsum/LoremIpsum'
 import ColorGenerator from './Projects/ColorGenerator/ColorGenerator'
+import Grocery from './Projects/Grocery/Grocery'
 
 function App() {
   return (
     <div className="App">
       <h1 className='text-center font-bold m-4 text-5xl'>React Projects</h1>
 
-      <ColorGenerator />
+      <Grocery />
       {/*  <BirthdayReminder />
+      <ColorGenerator />
       <LoremIpsum />
       <Tours />
       <Reviews />
