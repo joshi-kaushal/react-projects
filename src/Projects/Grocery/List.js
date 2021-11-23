@@ -2,11 +2,10 @@ import React from 'react'
 import { FaEdit, FaTrash } from 'react-icons/fa'
 
 function List(props) {
-
 	return (
 		<div className='grocery-list'>
 			{
-				props.list(item => {
+				props.list.map(item => {
 					const { id, title } = item
 
 					return (
