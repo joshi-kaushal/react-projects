@@ -43,7 +43,7 @@ const toursColor = {
   "red": "hsl(360, 67%, 44%)",
 }
 
-const loremColor = {  
+const loremColor = {
   "primary": "hsl(205, 86%, 17%)",
   "secondary": "hsl(205, 78%, 60%)",
   "ternary": "hsl(205, 100%, 96%)",
@@ -55,7 +55,6 @@ const colorGenerator = {
   "secondary": "hsl(209, 61%, 16%)",
   "ternary": "hsl(360, 67%, 44%)",
 }
-
 module.exports = {
   purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   darkMode: false, // or "media" or "class"
