@@ -55,6 +55,7 @@ const colorGenerator = {
   "secondary": "hsl(209, 61%, 16%)",
   "ternary": "hsl(360, 67%, 44%)",
 }
+
 module.exports = {
   purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   darkMode: false, // or "media" or "class"
