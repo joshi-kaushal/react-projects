@@ -20,6 +20,27 @@ function Grocery() {
 			type
 		})
 	}
+
+	const clearList = () => {
+		showAlert(true, 'danger', "Empty list")
+		setList([])
+	}
+
+	const removeItem = id => {
+		showAlert(true, 'danger', "Item removed")
+		setList(
+			list.filter(item => item.id !== id)
+		)
+	}
+
+	const editItem = id => {
+		const itemToEdit = list.find(item => item.id === id)
+		setIsEditing(true)
+		setEditID(id)
+		setItem(itemToEdit.title)
+
+	}
+	
 	const handleSubmit = e => {
 		e.preventDefault()
 
@@ -28,12 +49,23 @@ function Grocery() {
 			showAlert(true, 'danger', 'Please Enter Values')
 		} else if(item && isEditing) {
 			// Wants to edit the existing item
-			showAlert(true, 'success', 'Item added successfully')
+			showAlert(true, 'success', 'Item edited successfully')
+			setList(
+				list.map(itemToEdit => {
+					if (itemToEdit.id === editID) {
+						return { ...itemToEdit, title: item}
+					}
+					return itemToEdit
+				})
+			)
+			setIsEditing(false)
+			setEditID(null)
+			setItem('')
 		} else {
 			// New item
 			const newItem = {
-						id: new Date().getTime().toString(), 
-						title: item
+					id: new Date().getTime().toString(), 
+					title: item
 			}
 
 			setList([...list, newItem])
@@ -41,15 +73,10 @@ function Grocery() {
 		}
 	}
 
-	const clearList = () => {
-		showAlert(true, 'danger', "Empty list")
-		setList([])
-	}
-
 	return (
 		<section className='section-center'>
 			<form className='grocery-form' onSubmit={handleSubmit}>
-				{alert && <Alert {...alert} removeAlert={showAlert} />}
+				{alert && <Alert {...alert} removeAlert={showAlert} list={list}/>}
 
 				<h3>Grocery List</h3>
 
@@ -71,7 +98,7 @@ function Grocery() {
 			{
 				list.length > 0 && (
 					<div className='grocery-container'>
-						<List list={list} />
+						<List list={list} removeItem={removeItem} editItem={editItem}/>
 						<button className='clear-btn' onClick={clearList}>Clear Items</button>
 					</div>
 				)
