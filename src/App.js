@@ -10,14 +10,16 @@ import LoremIpsum from './Projects/LoremIpsum/LoremIpsum'
 import ColorGenerator from './Projects/ColorGenerator/ColorGenerator'
 import Grocery from './Projects/Grocery/Grocery'
 import Navbar from './Projects/Navbar/Navbar'
+import ModalApp from './Projects/Modal/ModalApp'
 
 function App() {
   return (
     <div className="App">
       <h1 className='text-center font-bold m-4 text-5xl'>React Projects</h1>
 
-      <Navbar />
+      <ModalApp />
       {/*  <BirthdayReminder />
+      <Navbar />
       <Grocery />
       <ColorGenerator />
       <LoremIpsum />
