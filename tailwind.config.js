@@ -56,6 +56,15 @@ const colorGenerator = {
   "ternary": "hsl(360, 67%, 44%)",
 }
 
+const navbarColor = {
+  "primary5": "#",
+  "primary7": "#",
+  "primary8": "#",
+  "primary1": "#",
+  "grey3": "#",
+  "grey3": "#",
+}
+
 module.exports = {
   purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   darkMode: false, // or "media" or "class"
