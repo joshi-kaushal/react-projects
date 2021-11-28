@@ -7,22 +7,22 @@ function BirthdayReminder() {
 
 	return (
 		<div className='bg-pink-200'>
-			<main className='min-h-screen flex content-centers justify-center items-center'>
-				<section className='w-90vw mb-9 p-4 mx-auto max-w-full border border-pink-500 rounded-md shadow-darkShadow'>
-					<h2 className='text-left text-4xl font-bold'>Birthday Reminder</h2>
-					<h3 className='text-lg transform-none mb-8 font-semibold'>{people.length} Birthdays today!</h3>
+			<main className='flex items-center justify-center min-h-screen content-centers'>
+				<section className='max-w-full p-4 mx-auto border border-pink-500 rounded-md w-90vw mb-9 shadow-darkShadow'>
+					<h2 className='text-4xl font-bold text-left'>Birthday Reminder</h2>
+					<h3 className='mb-8 text-lg font-semibold transform-none'>{people.length} Birthdays today!</h3>
 					<List people={people} />
 					{
 						people.length > 0
 							?	<button className=
-									'block w-full border-transparent mt-8 mb-0 mx-auto capitalize text-xl py-2 px-0 border rounded border-pink-500 hover:bg-pink-300 cursor-pointer'
+									'block w-full px-0 py-2 mx-auto mt-8 mb-0 text-xl capitalize border border-transparent border-pink-500 rounded cursor-pointer hover:bg-pink-300'
 									onClick={() => setPeople([])}
 								>
 								Reset
 							  </button>
 							  
 							:	<button className=
-									'block w-full border-transparent mt-8 mb-0 mx-auto capitalize text-xl py-2 px-0 border rounded border-pink-500 hover:bg-pink-300 cursor-pointer'
+									'block w-full px-0 py-2 mx-auto mt-8 mb-0 text-xl capitalize border border-transparent border-pink-500 rounded cursor-pointer hover:bg-pink-300'
 									onClick={() => setPeople(data)}
 								>
 								Load Birthdays
