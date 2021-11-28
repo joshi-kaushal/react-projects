@@ -9,9 +9,9 @@ function Accordion() {
 			return <SingleQuestion question={question} />
 		})
 	}
-	return <main className='min-h-screen flex justify-center items-center bg-purple-600'>
-		<div className="w-90vw md:w-880 my-20 mx-auto py-10 px-8 grid gap-8 md:grid-cols-2501fr border rounded bg-purple-200">
-			<h3 className='text-3xl leading-5 font-medium self-center'>Questions</h3>
+	return <main className='flex items-center justify-center min-h-screen bg-purple-600'>
+		<div className="grid gap-8 px-8 py-10 mx-auto my-20 bg-purple-200 border rounded w-90vw md:w-880 md:grid-cols-2501fr">
+			<h3 className='self-center text-3xl font-medium leading-5'>Questions</h3>
 			<section className='info'>
 				<RenderQuestions propQuestions={questions} />
 			</section>
