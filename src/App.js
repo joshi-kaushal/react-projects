@@ -9,7 +9,7 @@ import Slider from './Projects/Slider/Slider'
 import LoremIpsum from './Projects/LoremIpsum/LoremIpsum'
 import ColorGenerator from './Projects/ColorGenerator/ColorGenerator'
 import Grocery from './Projects/Grocery/Grocery'
-import Navbar from './Projects/Navbar/NavbarApp'
+import Navbar from './Projects/Navbar/Navbar'
 
 function App() {
   return (

@@ -57,12 +57,11 @@ const colorGenerator = {
 }
 
 const navbarColor = {
-  "primary5": "#",
-  "primary7": "#",
-  "primary8": "#",
-  "primary1": "#",
-  "grey3": "#",
-  "grey3": "#",
+  "primary1": "hsl(205, 86%, 17%)",
+  "primary5": "hsl(205, 78%, 60%)",
+  "primary7": "hsl(205, 90%, 76%)",
+  "primary8": "hsl(205, 86%, 81%)",
+  "grey3": "hsl(209, 34%, 30%)",
 }
 
 module.exports = {
@@ -79,7 +78,8 @@ module.exports = {
         reviewsColor,
         toursColor,
         loremColor,
-        colorGenerator
+        colorGenerator,
+        navbarColor
       },
       gridTemplateColumns: {
         "auto": "auto 1fr",
