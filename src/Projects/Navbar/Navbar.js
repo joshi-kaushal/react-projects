@@ -20,10 +20,10 @@ const Navbar = () => {
 
 	return (
 		<nav className='bg-white shadow-lightShadow'>
-			<div className=' p-4 md:max-w-7xl md:my-0 md:mx-auto md:flex md:items-center md:justify-between md:p-4'>
+			<div className='p-4  md:max-w-7xl md:my-0 md:mx-auto md:flex md:items-center md:justify-between md:p-4'>
 				<div className='flex items-center justify-between p4 md:p-0'>
 					<img className='h-10' src={logo} alt='Logo' />
-					<button className='md:hidden text-xl text-navbarColor-primary5 bg-transparent border-transparent transition duration-300 ease-linear cursor-pointer hover:transform hover:rotate-90 hover:text-navbarColor-primary1' onClick={() => setShowLinks(!showLinks)}>
+					<button className='text-xl transition duration-300 ease-linear bg-transparent border-transparent cursor-pointer md:hidden text-navbarColor-primary5 hover:transform hover:rotate-90 hover:text-navbarColor-primary1' onClick={() => setShowLinks(!showLinks)}>
 						<FaBars />
 					</button>
 				</div>
@@ -37,7 +37,7 @@ const Navbar = () => {
 
 								return (
 									<li key={id}>
-										<a className='text-xl capitalize text-navbarColor-grey3 leading-4 block py-2 px-4 transition duration-300 ease-linear pl-6 hover:text-navbarColor-primary5 md:py-0 md:px-2 ' href={url}>
+										<a className='block px-4 py-2 pl-6 text-xl leading-4 capitalize transition duration-300 ease-linear text-navbarColor-grey3 hover:text-navbarColor-primary5 md:py-0 md:px-2 ' href={url}>
 											{text}
 										</a>
 									</li>
@@ -55,7 +55,7 @@ const Navbar = () => {
 
 							return (
 								<li key={id}>
-									<a className='my-0 mx-2 text-navbarColor-primary5 transition duration-300 ease-linear hover:text-navbarColor-primary7' href={url}>
+									<a className='mx-2 my-0 transition duration-300 ease-linear text-navbarColor-primary5 hover:text-navbarColor-primary7' href={url}>
 										{icon}
 									</a>
 								</li>
