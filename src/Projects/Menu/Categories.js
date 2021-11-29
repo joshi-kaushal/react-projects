@@ -1,10 +1,10 @@
 import React from 'react';
 
 const Categories = props => {
-	return <div className='mb-16 flex justify-center'>
+	return <div className='flex justify-center mb-16'>
 		{
 			props.categories.map((category, index) => {
-				return <button type='button' key={index} className='bg-transparent border-transparent rounded text-base my-0 mx-2 py-3 px-3 cursor-pointer transition-all ease-linear hover:bg-gold hover:text-white capitalize font-semibold' onClick={() => {
+				return <button type='button' key={index} className='px-3 py-3 mx-2 my-0 text-base font-semibold capitalize transition-all ease-linear bg-transparent border-transparent rounded cursor-pointer hover:bg-gold hover:text-white' onClick={() => {
 					props.filterItems(category)
 				}}>
 					{category}

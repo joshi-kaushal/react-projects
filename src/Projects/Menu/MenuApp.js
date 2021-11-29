@@ -20,8 +20,8 @@ function MenuApp() {
 
 
 	return (
-		<section className='w-10/12 my-0 mx-auto md:w-8/12 py-20 px-0'>
-			<div className='text-center mb-8'>
+		<section className='w-10/12 px-0 py-20 mx-auto my-0 md:w-8/12'>
+			<div className='mb-8 text-center'>
 				<h1 className='text-5xl font-semibold text-gold'>Today's Menu</h1>
 				<div className='underline'></div>
 			</div>
