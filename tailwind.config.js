@@ -1,3 +1,13 @@
+const modalColor = {
+  "primaryDark":"hsl(205, 86%, 17%)",
+  "primaryLight":"hsl(205, 78%, 60%)",
+  "greyDark":"hsl(209, 34%, 30%)",
+  "greyDarker":"hsl(211, 39%, 23%)",
+  "greyLight":"hsl(210, 22%, 49%)",
+  "greyLighter":"hsl(209, 28%, 39%)",
+  "greyWhite":"hsl(210, 36%, 96%)",
+}
+
 const BirthdayReminder = {
   "pink": "#f28ab2",
 }
@@ -79,7 +89,8 @@ module.exports = {
         toursColor,
         loremColor,
         colorGenerator,
-        navbarColor
+        navbarColor,
+        modalColor
       },
       gridTemplateColumns: {
         "auto": "auto 1fr",
@@ -87,6 +98,7 @@ module.exports = {
         "color": "repeat(auto-fit, minmax(223.33px, 1fr))"
       },
       gridTemplateRows: {
+        "auto": "auto 1fr",
         "color": "repeat(auto-fit, minmax(96px, 1fr))"
       },
       boxShadow: {

@@ -13,21 +13,19 @@ const AppProvider = ({children}) => {
 	const closeModal = () => setIsModalOpen(false)
 
 	return 	<AppContext.Provider
-				value={{
-						isSidebarOpen,
-						isModalOpen,
-						openModal,
-						openSidebar,
-						closeSidebar,
-						closeModal
+		value={{
+			isSidebarOpen,
+			isModalOpen,
+			openModal,
+			closeModal,
+			openSidebar,
+			closeSidebar,
 				}}
 			>
 				{children}
 			</AppContext.Provider>
 	}
 
-export const useGlobalContext = () => {
-	return useContext(AppContext)
-}
+export const useGlobalContext = () => useContext(AppContext)
 
 export { AppContext, AppProvider } 
