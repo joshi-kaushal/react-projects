@@ -36,8 +36,8 @@ function ToursApp() {
 	}
 
 	if (tours.length === 0) {
-		return <main className='w-90vw max-w-3xl my-20 mx-auto'> 
-			<h1 className='text-center mb-16'>
+		return <main className='max-w-3xl mx-auto my-20 w-90vw'> 
+			<h1 className='mb-16 text-center'>
 				No tours found
 				<button className='btn' onClick={() => { fetchTours() }}>Load Tours</button>
 			</h1>
@@ -45,7 +45,7 @@ function ToursApp() {
 		</main>
 	}
 	return (
-		<main className='w-90vw max-w-3xl my-20 mx-auto'>
+		<main className='max-w-3xl mx-auto my-20 w-90vw'>
 			<Tours tours={tours} removeTour={removeTour} />
 		</main>)
 }
