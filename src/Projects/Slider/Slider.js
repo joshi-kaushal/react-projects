@@ -46,15 +46,15 @@ function Slider() {
 	}, [index])
 
 	return (
-		<section className='my-20 mx-auto sm:w-90vw md:w-95vw'>
-			<div className='text-center mb-8'>
+		<section className='mx-auto my-20 sm:w-90vw md:w-95vw'>
+			<div className='mb-8 text-center'>
 				<h2 className='flex items-center justify-center text-4xl font-bold'>
-					<span className='text-sliderColor-primary text-4xl text-sliderColor-primaryDark font-bold'>/</span> Reviews
+					<span className='text-4xl font-bold text-sliderColor-primary text-sliderColor-primaryDark'>/</span> Reviews
 				</h2>
 			</div>
 
 			{/* Main Section */}
-			<div className=' my-0 mx-auto mt-16 max-w-880 h-450 text-center relative flex overflow-hidden '>
+			<div className='relative flex mx-auto my-0 mt-16 overflow-hidden text-center  max-w-880 h-450'>
 				{
 					people.map((person, personIndex) => {
 						const { id, image, name, title, quote } = person;
@@ -76,12 +76,12 @@ function Slider() {
 						// Actual Slides
 						return (
 							<article className={`${position} ' absolute top-0 left-0 w-full h-full transition-all duration-300 ease-linear'`} key={id}>
-								<img src={image} alt={name} className='inline-block border rounded-full border-sliderColor-ternary mb-4 h-40 w-40 object-cover shadow-darkShadow' />
-								<h4 className='uppercase mb-1 text-sliderColor-primary font-semibold'>{name}</h4>
-								<p className='capitalize mb-3 text-sliderColor-secondary'>{title}</p>
-								<p className='w-10/12 my-0 mx-auto leading-8 text-sliderColor-primary'>{quote}</p>
+								<img src={image} alt={name} className='inline-block object-cover w-40 h-40 mb-4 border rounded-full border-sliderColor-ternary shadow-darkShadow' />
+								<h4 className='mb-1 font-semibold uppercase text-sliderColor-primary'>{name}</h4>
+								<p className='mb-3 capitalize text-sliderColor-secondary'>{title}</p>
+								<p className='w-10/12 mx-auto my-0 leading-8 text-sliderColor-primary'>{quote}</p>
 
-								<FaQuoteRight className='text-5xl mt-4 inline-block text-sliderColor-primary' />
+								<FaQuoteRight className='inline-block mt-4 text-5xl text-sliderColor-primary' />
 							</article>
 						)
 					})
