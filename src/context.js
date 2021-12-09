@@ -14,7 +14,7 @@ const AppProvider = ({children}) => {
 	const closeModal = () => setIsModalOpen(false)
 
 	// Submenus
-	const [isMenuOpen, setIsMenuOpen] = useState(true)	
+	const [isMenuOpen, setIsMenuOpen] = useState(false)	
 	const [isSubmenuOpen, setIsSubmenuOpen] = useState(true)	
 
 	const openMenu = () => setIsMenuOpen(true)
