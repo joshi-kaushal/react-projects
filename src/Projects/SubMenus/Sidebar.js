@@ -7,7 +7,7 @@ const Sidebar = () => {
   const { isMenuOpen, closeMenu } = useGlobalContext()
 
 
-  return <aside className="sidebar-wrapper">
+  return <aside className={` ${isMenuOpen ? 'show' : "hidden" } 'sidebar-wrapper' `}>
     <div className="sidebar">
       <button className='close-btn' onClick={closeMenu}>
         <FaTimes />

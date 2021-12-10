@@ -8,13 +8,11 @@ import Submenu from './Submenu'
 import './index.css'
 
 function SubMenuApp() {
-  const data = useGlobalContext();
-  console.table(data)
   return (
     <>
       <Navbar />
-      <Hero />
       <Sidebar />
+      <Hero />
       <Submenu />
     </>
   )
