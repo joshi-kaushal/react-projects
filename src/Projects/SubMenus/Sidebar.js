@@ -6,14 +6,16 @@ import { useGlobalContext } from '../../context'
 const Sidebar = () => {
   const { isMenuOpen, closeMenu } = useGlobalContext()
 
-
+  // two classes in first div - 'sidebar-wrapper' and 'show'
   return <div className={` ${isMenuOpen ? 'visible transform scale-1 ' : "hidden"} 'fixed place-items-center top-0 left-0 z-0 grid w-full h-full transition duration-300 ease-in transform scale-0-z-1' `}>
+    {/* sidebar */}
     <aside className="relative px-8 py-16 bg-white max-w-1170 w-90vw shadow-darkShadow">
-     
+     {/* close-btn */}
       <button className='absolute text-2xl text-red-500 bg-transparent border-transparent cursor-pointer top-4 right-4' onClick={closeMenu}>
         <FaTimes />
       </button>
       
+      {/* sidebar-links */}
       <div className="sidebar-links ">
         {
           sublinks.map((item, index) => {
@@ -24,6 +26,7 @@ const Sidebar = () => {
                 <h4 className='text-lg font-semibold'>{page}</h4>
 
                 {/* Inner Array */}
+                {/* sidebar-sublinks */}
                 <div className="grid grid-cols-2 gap-1">
                   {
                     links.map((link, index) => {
