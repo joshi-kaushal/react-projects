@@ -26,7 +26,7 @@ const Submenu = () => {
           const { label, icon, url } = link
 
            return (
-             <a key={index} href={url} className='flex items-center w-40 capitalize text-stripeColor-light hover:text-black' style={{ 'svg': 'margin-right: 1rem' }}>
+             <a key={index} href={url} className='flex items-center w-40 capitalize text-stripeColor-normal hover:text-black' style={{ 'svg': 'margin-right: 1rem' }}>
                {icon}
                {label}
              </a>

@@ -16,7 +16,6 @@ import SubMenuApp from './Projects/SubMenus/SubMenuApp'
 function App() {
   return (
     <div className="App">
-      <h1 className='m-4 text-5xl font-bold text-center'>React Projects</h1>
 
       <SubMenuApp />
       {/*  <BirthdayReminder />

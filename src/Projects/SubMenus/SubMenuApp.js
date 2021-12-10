@@ -11,8 +11,8 @@ function SubMenuApp() {
   return (
     <>
       <Navbar />
-      <Hero />  
       <Sidebar />
+      <Hero />  
       <Submenu />
     </>
   )

@@ -20,7 +20,7 @@ const Navbar = () => {
     <div className="items-center w-90vw max-w-7xl lg:grid lg:grid-cols-auto1FRauto ">
       <div className="flex items-center justify-between">
         <img src={logo} alt="Stripe" className='nav-logo' />
-        <button className="px-3 py-1 text-base text-white transition duration-300 ease-in bg-black border rounded-md cursor-pointer lg:hidden hover:bg-stripeColor-normal toggle-btn" onClick={openMenu}>
+        <button className="px-3 py-1 text-xl text-white transition duration-300 ease-in bg-black border rounded-md cursor-pointer lg:hidden hover:bg-stripeColor-normal toggle-btn" onClick={openMenu}>
           <FaBars />
         </button>
       </div>
