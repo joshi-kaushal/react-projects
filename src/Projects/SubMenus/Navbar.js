@@ -5,9 +5,10 @@ import { useGlobalContext } from '../../context'
 
 const Navbar = () => {
   const { openMenu, openSubmenu, closeSubmenu} = useGlobalContext();
+ 
+  const handleSubmenuClose = e => !e.target.classList.contains('link-btn') ? closeSubmenu() : ""
 
   const displaySubmenu = (e) => {
-    console.log(e.target.textContent);
     const page = e.target.textContent;
     const tempBtn = e.target.getBoundingClientRect();
     const center = (tempBtn.left + tempBtn.right) / 2;
@@ -15,7 +16,7 @@ const Navbar = () => {
     openSubmenu(page, { center, bottom });
   };
 
-  return <nav className='nav'>
+  return <nav className='nav' onMouseOver={handleSubmenuClose}>
     <div className="nav-center">
       <div className="nav-header">
         <img src={logo} alt="Stripe" className='nav-logo' />
