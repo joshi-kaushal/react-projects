@@ -5,14 +5,14 @@ import Navbar from './Navbar'
 import Hero from './Hero'
 import Sidebar from './Sidebar'
 import Submenu from './Submenu'
-import './index.css'
+// import './index.css'
 
 function SubMenuApp() {
   return (
     <>
       <Navbar />
+      <Hero />  
       <Sidebar />
-      <Hero />
       <Submenu />
     </>
   )

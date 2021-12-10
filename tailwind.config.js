@@ -8,6 +8,12 @@ const modalColor = {
   "greyWhite":"hsl(210, 36%, 96%)",
 }
 
+const stripeColor= {
+  "dark":"hsl(209, 61%, 16%)",
+  "normal":"hsl(210, 22%, 49%)",
+  "light":"hsl(210, 36%, 96%)",
+}
+
 const BirthdayReminder = {
   "pink": "#f28ab2",
 }
@@ -90,12 +96,14 @@ module.exports = {
         loremColor,
         colorGenerator,
         navbarColor,
-        modalColor
+        modalColor,
+        stripeColor
       },
       gridTemplateColumns: {
         "auto": "auto 1fr",
         "2501fr": "250px 1fr",
-        "color": "repeat(auto-fit, minmax(223.33px, 1fr))"
+        "color": "repeat(auto-fit, minmax(223.33px, 1fr))",
+        "auto1FRauto" : "auto 1fr auto"
       },
       gridTemplateRows: {
         "auto": "auto 1fr",
@@ -130,13 +138,23 @@ module.exports = {
         "2": "2rem"
       },
       maxWidth: {
-        "880": "880px"
+        "880": "880px",
+        "1170": "1170px"
       },
       borderRadius: {
         "50": "50%"
       },
       minHeight: {
         "vhminus100": "calc(100vh - 100px)"
+      },
+      zIndex: {
+        "1": "1",
+        "-1": "-1",
+        "2": "2",
+        "3": "3",
+      },
+      scale: {
+        "1": "1",
       }
     },
   },
