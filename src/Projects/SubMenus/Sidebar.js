@@ -7,7 +7,7 @@ const Sidebar = () => {
   const { isMenuOpen, closeMenu } = useGlobalContext()
 
   // two classes in first div - 'sidebar-wrapper' and 'show'
-  return <div className={` ${isMenuOpen ? 'visible transform scale-1 ' : "hidden"} 'fixed place-items-center top-0 left-0 z-0 grid w-full h-full transition duration-300 ease-in transform scale-0-z-1' `}>
+  return <div className={` ${isMenuOpen ? 'visible transform scale-1 ' : "hidden"} 'fixed place-items-center top-0 left-0 z-0 grid w-full h-full transition duration-300 ease-in -z-1' `}>
     {/* sidebar */}
     <aside className="relative px-8 py-16 bg-white max-w-1170 w-90vw shadow-darkShadow">
      {/* close-btn */}
