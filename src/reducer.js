@@ -47,7 +47,12 @@ const reducer = (state, action) => {
 
 			return { ...state, total, amount }
 
-
+		case 'LOADING_ITEMS':
+			return { ...state, loading: true}
+		
+		case 'DISPLAY_ITEMS':
+			return { ...state, loading: false, cart: action.payload}
+				
 		default:
 			break;
 	}
