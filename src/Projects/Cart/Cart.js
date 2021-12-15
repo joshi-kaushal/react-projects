@@ -7,11 +7,21 @@ import Navbar from './Navbar'
 import CartContainer from './CartContainer'
 
 function Cart() {
+	
+	const { loading } = useGlobalContext()
+	
+	if(loading) {
+		return (
+			<div className="loading">
+				<h1>Loading...</h1>
+			</div>
+		)
+	}
+	
 	return (
 		<main>
 			<Navbar />
 			<CartContainer />
-			<h1>HI</h1>
 		</main>
 	)
 }
