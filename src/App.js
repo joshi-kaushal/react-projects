@@ -12,13 +12,15 @@ import Grocery from './Projects/Grocery/Grocery'
 import Navbar from './Projects/Navbar/Navbar'
 import ModalApp from './Projects/Modal/ModalApp'
 import SubMenuApp from './Projects/SubMenus/SubMenuApp'
+import Cart from './Projects/Cart/Cart'
 
 function App() {
   return (
     <div className="App">
 
-      <SubMenuApp />
+      <Cart />
       {/*  <BirthdayReminder />
+      <SubMenuApp />
       <ModalApp />
       <Navbar />
       <Grocery />

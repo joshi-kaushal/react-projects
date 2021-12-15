@@ -1,10 +1,16 @@
 import React, {useState, useContext} from 'react'
+import reduder from './reducer'
+
+// ! Submenus
 import sublinks from './Projects/SubMenus/data'
 
+// ! Cart
+import cartItems from './Projects/Cart/data'
 const AppContext = React.createContext()
 
 const AppProvider = ({children}) => {
-	// Slider
+
+	// ! - - - - - Slider - - - - - 
 	const [isSidebarOpen, setIsSidebarOpen] = useState(false)
 	const [isModalOpen, setIsModalOpen] = useState(false)
 
@@ -14,7 +20,7 @@ const AppProvider = ({children}) => {
 	const openModal = () => setIsModalOpen(true)
 	const closeModal = () => setIsModalOpen(false)
 
-	// Submenus
+	// ! - - - - - Submenus - - - - -
 	const [isMenuOpen, setIsMenuOpen] = useState(false)	
 	const [isSubmenuOpen, setIsSubmenuOpen] = useState(false)	
 	const [location, setLocation] = useState({})
@@ -33,11 +39,19 @@ const AppProvider = ({children}) => {
 	}
 	const closeSubmenu = () => setIsSubmenuOpen(false)
 
+	// ! - - - - - Cart - - - - -
+	const url = 'https://course-api.com/react-useReducer-cart-project'
+
+	const [cart, setCart] = useState(cartItems)
+
+
 	return 	<AppContext.Provider
 		value={{
 			isSidebarOpen, isModalOpen, openModal, closeModal, openSidebar, closeSidebar, 
 
-			isMenuOpen, isSubmenuOpen, page, location, openMenu, closeMenu, openSubmenu, closeSubmenu, setPage
+			isMenuOpen, isSubmenuOpen, page, location, openMenu, closeMenu, openSubmenu, closeSubmenu, setPage,
+
+			cart, setCart
 			}}
 			>
 				{children}
