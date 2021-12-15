@@ -15,11 +15,6 @@ const AppProvider = ({children}) => {
 	const closeModal = () => setIsModalOpen(false)
 
 	// Submenus
-
-	/*
-	 ! Menu => Sidebar
-	 ! Submenu => Submenu
-	*/
 	const [isMenuOpen, setIsMenuOpen] = useState(false)	
 	const [isSubmenuOpen, setIsSubmenuOpen] = useState(false)	
 	const [location, setLocation] = useState({})
