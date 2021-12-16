@@ -13,13 +13,15 @@ import Navbar from './Projects/Navbar/Navbar'
 import ModalApp from './Projects/Modal/ModalApp'
 import SubMenuApp from './Projects/SubMenus/SubMenuApp'
 import Cart from './Projects/Cart/Cart'
+import Cocktail from './Projects/Cocktail/Cocktail'
 
 function App() {
   return (
     <div className="App">
 
-      <Cart />
+      <Cocktail />
       {/*  <BirthdayReminder />
+      <Cart />
       <SubMenuApp />
       <ModalApp />
       <Navbar />

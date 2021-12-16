@@ -40,7 +40,7 @@ const AppProvider = ({children}) => {
 	const closeSubmenu = () => setIsSubmenuOpen(false)
 
 	// ! - - - - - Cart - - - - -
-	const url = 'https://course-api.com/react-useReducer-cart-project'
+	const cartURL = 'https://course-api.com/react-useReducer-cart-project'
 	
 	const initialState = {
 		loading: false,
@@ -58,7 +58,7 @@ const AppProvider = ({children}) => {
 	
 	const fetchData = async () => {
 		dispatch({ type: 'LOADING_ITEMS'})
-		const response = await fetch(url)
+		const response = await fetch(cartURL)
 
 		const cart = await response.json()
 		dispatch({type: 'DISPLAY_ITEMS', payload: cart})
@@ -72,6 +72,8 @@ const AppProvider = ({children}) => {
 		dispatch({ type: 'GET_TOTALS' })
 	}, [state.cart])
 
+	// ! - - - - - Cocktail - - - - - 
+	const cocktailURL = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s='
 	return 	<AppContext.Provider
 		value={{
 			isSidebarOpen, isModalOpen, openModal, closeModal, openSidebar, closeSidebar, 
