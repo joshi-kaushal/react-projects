@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors')
+
 const modalColor = {
   "primaryDark":"hsl(205, 86%, 17%)",
   "primaryLight":"hsl(205, 78%, 60%)",
@@ -6,6 +8,13 @@ const modalColor = {
   "greyLight":"hsl(210, 22%, 49%)",
   "greyLighter":"hsl(209, 28%, 39%)",
   "greyWhite":"hsl(210, 36%, 96%)",
+}
+
+const cart = {
+  "primary": "#2680c0",
+  "primaryLight": "hsl(205, 84%, 74%)",
+  "primaryDark": "hsl(205, 100%, 21%)",
+  "grey": "#617d98",
 }
 
 const stripeColor= {
@@ -86,6 +95,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        colors,
         BirthdayReminder,
         menuColor,
         tabsColor,
@@ -97,7 +107,8 @@ module.exports = {
         colorGenerator,
         navbarColor,
         modalColor,
-        stripeColor
+        stripeColor,
+        cart
       },
       gridTemplateColumns: {
         "auto": "auto 1fr",

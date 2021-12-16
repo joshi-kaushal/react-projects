@@ -1,7 +1,7 @@
 import React from 'react'
 
 import {useGlobalContext} from '../../context'
-import './cart.css'
+// import './cart.css'
 
 import Navbar from './Navbar'
 import CartContainer from './CartContainer'
@@ -12,7 +12,7 @@ function Cart() {
 	
 	if(loading) {
 		return (
-			<div className="loading">
+			<div className="mt-20 font-semibold text-center capitalize">
 				<h1>Loading...</h1>
 			</div>
 		)
