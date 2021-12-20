@@ -19,10 +19,10 @@ function App() {
   return (
     <div className="App">
 
-      <Cocktail />
-      {/*  <BirthdayReminder />
-      <Cart />
       <SubMenuApp />
+      {/*  <BirthdayReminder />
+      <Cocktail />
+      <Cart />
       <ModalApp />
       <Navbar />
       <Grocery />
