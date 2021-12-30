@@ -10,6 +10,19 @@ const modalColor = {
   "greyWhite":"hsl(210, 36%, 96%)",
 }
 
+const cocktail = {
+  "primaryLight": "#d4e6a5",
+  "primaryColor": "#47612e",
+  "primaryDark": "#c02c03",
+  "offWhite": "#f7f7f7",
+  "mainBG": "#f1f5f8",
+  "mainOverlay": "rgba(35, 10, 36, 0.4)",
+  "mainBlack": "#222",
+  "mainGrey": "#ececec",
+  "darkGrey": "#afafaf",
+  "mainRed": "#bd0303",
+}
+
 const cart = {
   "primary": "#2680c0",
   "primaryLight": "hsl(205, 84%, 74%)",
@@ -95,7 +108,6 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        colors,
         BirthdayReminder,
         menuColor,
         tabsColor,
@@ -108,7 +120,9 @@ module.exports = {
         navbarColor,
         modalColor,
         stripeColor,
-        cart
+        cart,
+        cocktail,
+        colors
       },
       gridTemplateColumns: {
         "auto": "auto 1fr",
@@ -141,6 +155,7 @@ module.exports = {
         "150": "150px",
         "450": "450px",
         "80vw": "80vw",
+        "85vw": "85vw",
         "90vw": "90vw",
         "95vw": "95vw",
         "880": "880px"
@@ -150,7 +165,8 @@ module.exports = {
       },
       maxWidth: {
         "880": "880px",
-        "1170": "1170px"
+        "1170": "1170px",
+        "40": "40rem"
       },
       borderRadius: {
         "50": "50%"

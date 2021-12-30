@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Cocktail = ({ id, name, info, glass, image }) => {
   return (
-    <article className="cocktail">
+    <article className="grid grid-rows-1 mb-8 transition duration-300 ease-in bg-wihte shadow-lightShadow">
       <div className="img-contailer">
         <img src={image} alt={name} />
       </div>

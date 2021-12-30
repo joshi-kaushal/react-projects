@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 
 const Error = () => {
   return (
-      <section className="error-page section">
-        <div className="error-container">
+      <section className="flex justify-center px-0 py-20">
+        <div className="text-center capitalize">
           <h1>Oops :(</h1>
           <p>The page does not exists.</p>
           <Link to='/' className='btn btn-primary'>
