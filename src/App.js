@@ -19,9 +19,9 @@ function App() {
   return (
     <div className="App">
 
-      <SubMenuApp />
-      {/*  <BirthdayReminder />
       <Cocktail />
+      {/*  <BirthdayReminder />
+      <SubMenuApp />
       <Cart />
       <ModalApp />
       <Navbar />
