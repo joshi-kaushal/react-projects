@@ -74,13 +74,45 @@ const AppProvider = ({children}) => {
 
 	// ! - - - - - Cocktail - - - - - 
 	const cocktailURL = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s='
+
+	const [loading, setLoading] = useState(false)
+	const [searchTerm, setSearchTerm] = useState('a')
+	const [cocktails, setCocktails] = useState([])
+
+	const fetchDrinks = async () => {
+		setLoading(true)
+
+		try {
+			const response = await fetch(`${cocktailURL}${searchTerm}`)
+			const data = await response.json()
+			const {drinks} = data
+
+			if(drinks) {
+
+			} else {
+				setCocktails([])
+			}
+			setLoading(false)
+		} catch (error) {
+			console.log(error);
+			setLoading(false)
+		}
+	}
+
+	useEffect(() => {
+		fetchDrinks()
+	}, [searchTerm])
+
+	// ! - - - - - Context Provider - - - - - 
 	return 	<AppContext.Provider
 		value={{
 			isSidebarOpen, isModalOpen, openModal, closeModal, openSidebar, closeSidebar, 
 
 			isMenuOpen, isSubmenuOpen, page, location, openMenu, closeMenu, openSubmenu, closeSubmenu, setPage,
 
-			...state, clearCart, removeItem, increaseAmount, decreaseAmount
+			...state, clearCart, removeItem, increaseAmount, decreaseAmount,
+
+			loading, searchTerm, cocktails
 			}}
 			>
 				{children}
