@@ -86,9 +86,20 @@ const AppProvider = ({children}) => {
 			const response = await fetch(`${cocktailURL}${searchTerm}`)
 			const data = await response.json()
 			const {drinks} = data
-
+				
 			if(drinks) {
+				const newCocktails = drinks.map(drink => {
+					const { idDrink, strDrink, strDrinkThumb, strAlcoholic, strGlass } = drink
+					return {
+						id: idDrink,
+						name: strDrink,
+						image: strDrinkThumb,
+						info: strAlcoholic,
+						glass: strGlass
+					}
+				})
 
+				setCocktails(newCocktails)
 			} else {
 				setCocktails([])
 			}
@@ -112,7 +123,7 @@ const AppProvider = ({children}) => {
 
 			...state, clearCart, removeItem, increaseAmount, decreaseAmount,
 
-			loading, searchTerm, cocktails
+			loading, searchTerm, cocktails, setSearchTerm
 			}}
 			>
 				{children}
