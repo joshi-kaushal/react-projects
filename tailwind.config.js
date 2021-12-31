@@ -128,7 +128,8 @@ module.exports = {
         "auto": "auto 1fr",
         "2501fr": "250px 1fr",
         "color": "repeat(auto-fit, minmax(223.33px, 1fr))",
-        "auto1FRauto" : "auto 1fr auto"
+        "auto1FRauto" : "auto 1fr auto",
+        "2FR3FR": "2fr 3fr"
       },
       gridTemplateRows: {
         "auto": "auto 1fr",

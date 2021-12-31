@@ -16,7 +16,7 @@ const CocktailList = () => {
 
   return (
     <section className='px-0 py-20'>
-      <h2 className="mt-4 text-3xl leading-8 text-center capitalize mb-14">
+      <h2 className="mt-4 text-3xl font-semibold leading-8 text-center capitalize mb-14">
         Cocktails
       </h2>
 

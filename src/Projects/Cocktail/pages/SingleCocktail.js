@@ -51,48 +51,47 @@ const SingleCocktail = () => {
   }
 
   if (!cocktail) {
-    return <h2 className='section-title'>No cocktail to display</h2>
+    return <h2 className='py-20'>No cocktail to display</h2>
   }
 
   const { name, image, category, info, glass, instructions , ingredients } = cocktail
 
   return (
-    <section className="section cocktail-section">
-      <Link to='/' className='btn btn-primary'>
+    <section className="px-0 py-20 text-center">
+      <Link to='/' className='inline-block p-3 text-sm leading-6 uppercase transition duration-300 ease-in bg-transparent border-2 rounded-md cursor-pointer hover:bg-cocktail-mainGrey hover:text-cocktail-primaryColor text-cocktail-mainGrey bg-cocktail-primaryColor border-cocktail-primaryColor'>
         back home
       </Link>
+      <h2 className="mt-4 text-4xl font-semibold leading-6 text-center capitalize mb-14">{name}</h2>
+      <div className="gap-12 mx-auto my-0 text-left lg:grid lg:items-center lg:grid-cols-2FR3FR w-85vw max-w-1170 ">
+        <img src={image} alt={name} className="border rounded-md" />
 
-      <h2 className="section-title">{name}</h2>
-      <div className="drink">
-        <img src={image} alt={name} />
-
-        <div className="drink-info">
-          <p>
-            <span className="drink-data">name :</span>
+        <div className="lg:pt-0">
+          <p className="font-bold leading-7 capitalize">
+            <span className="px-2 py-1 mr-2 border rounded-md bg-cocktail-primaryLight text-cocktail-primaryColor">name :</span>
             {name}
           </p>
-          <p>
-            <span className="drink-data">category :</span>
+          <p className="font-bold leading-7 capitalize">
+            <span className="px-2 py-1 mr-2 border rounded-md bg-cocktail-primaryLight text-cocktail-primaryColor">category :</span>
             {category}
           </p>
-          <p>
-            <span className="drink-data">info :</span>
+          <p className="font-bold leading-7 capitalize">
+            <span className="px-2 py-1 mr-2 border rounded-md bg-cocktail-primaryLight text-cocktail-primaryColor">info :</span>
             {info}
           </p>
-          <p>
-            <span className="drink-data">glass :</span>
+          <p className="font-bold leading-7 capitalize">
+            <span className="px-2 py-1 mr-2 border rounded-md bg-cocktail-primaryLight text-cocktail-primaryColor">glass :</span>
             {glass}
           </p>       
-          <p>
-            <span className="drink-data">instructions :</span>
+          <p className="font-bold leading-7 capitalize">
+            <span className="px-2 py-1 mr-2 border rounded-md bg-cocktail-primaryLight text-cocktail-primaryColor">instructions :</span>
             {instructions}
           </p>
-          <p>
-            <span className="drink-data">ingredients :</span>
+          <p className="font-bold leading-7 capitalize">
+            <span className="px-2 py-1 mr-2 border rounded-md bg-cocktail-primaryLight text-cocktail-primaryColor">ingredients :</span>
 
             {
               ingredients.map((ingredient, index)=> {
-                return ingredient ? <span key={index}>{ingredient}</span> : null
+                return ingredient ? <span key={index} className="mr-2">{ingredient}</span> : null
               })
             }
           </p>

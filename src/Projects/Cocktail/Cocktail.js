@@ -8,7 +8,7 @@ import Error from './pages/Error'
 // import components
 import Navbar from './components/Navbar'
 
-import './cocktail.css'
+// import './cocktail.css'
 
 function Cocktail() {
 	return (

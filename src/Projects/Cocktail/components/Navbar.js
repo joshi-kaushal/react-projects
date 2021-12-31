@@ -12,12 +12,12 @@ const Navbar = () => {
 
         <ul className="flex items-center">
           <li>
-            <Link to='/'>
+            <Link to='/' className='inline-block px-4 py-2 mr-2 text-lg font-semibold capitalize transition duration-300 ease-in'>
               Home
             </Link>
           </li>
           <li>
-            <Link to='/about'>
+            <Link to='/about' className='inline-block px-4 py-2 mr-2 text-lg font-semibold capitalize transition duration-300 ease-in'>
               About
             </Link>
           </li>
