@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react'
 
 import { FaGithub, FaHome } from 'react-icons/fa'
-const Navbar = (props) => {
+
+const Navbar = () => {
+
 	return (
-		<nav className='flex items-center bg-indigo-400 border-b-2 h-28 shadow-lightShadow'>
+		<nav className='flex items-center bg-palette-background h-28 shadow-lightShadow'>
 			<div className="flex items-center justify-between mx-auto my-0 w-85vw max-w-1170">
 				<a href='https://www.github.com/joshi-kaushal/react-miniprojects' className='text-2xl font-bold text-black capitalize md:text-4xl' target="_blank" rel="noreferrer">
 					react projects

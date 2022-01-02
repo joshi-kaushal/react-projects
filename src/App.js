@@ -20,7 +20,6 @@ import SubMenuApp from './Projects/SubMenus/SubMenuApp'
 import Cart from './Projects/Cart/Cart'
 import Cocktail from './Projects/Cocktail/Cocktail'
 
-
 function App() {
   return (
     <Router>

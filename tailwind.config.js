@@ -1,5 +1,10 @@
 const colors = require('tailwindcss/colors')
-
+const palette = {
+  "card": "#DDFFE7",
+  "hover": "#98D7C2",
+  "buttons": "#167D7F",
+  "background": "#29A0B1",
+}
 const modalColor = {
   "primaryDark":"hsl(205, 86%, 17%)",
   "primaryLight":"hsl(205, 78%, 60%)",
@@ -122,6 +127,7 @@ module.exports = {
         stripeColor,
         cart,
         cocktail,
+        palette,
         colors
       },
       gridTemplateColumns: {

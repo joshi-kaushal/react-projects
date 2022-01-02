@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useContext, useReducer} from 'react'
 import reducer from './reducer'
 
+
 // ! Submenus
 import sublinks from './Projects/SubMenus/data'
 
@@ -9,7 +10,15 @@ import cartItems from './Projects/Cart/data'
 const AppContext = React.createContext()
 
 const AppProvider = ({children}) => {
-
+	
+	// ! NAVBAR !! 
+	const [palette, setPalette] = useState({
+		"background": "#FFF8F3",
+		"card": "#A3E4DB",
+		"buttons": "#1C6DD0",
+		"extra": "#FED1EF",
+	})
+	
 	// ! - - - - - Slider - - - - - 
 	const [isSidebarOpen, setIsSidebarOpen] = useState(false)
 	const [isModalOpen, setIsModalOpen] = useState(false)
@@ -117,6 +126,8 @@ const AppProvider = ({children}) => {
 	// ! - - - - - Context Provider - - - - - 
 	return 	<AppContext.Provider
 		value={{
+			palette, setPalette,
+
 			isSidebarOpen, isModalOpen, openModal, closeModal, openSidebar, closeSidebar, 
 
 			isMenuOpen, isSubmenuOpen, page, location, openMenu, closeMenu, openSubmenu, closeSubmenu, setPage,
