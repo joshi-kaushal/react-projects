@@ -40,10 +40,10 @@ const projects = [
 	},
 	{
 		id: 4,
-		name: 'Modal',
-		slug: '/modal',
-		description: 'Modal and Sidebar',
-		component: <ModalApp />
+		name: 'Grocery',
+		slug: '/grocery-cart',
+		description: 'Shop your groceries',
+		component: <Grocery />
 	},
 	{
 		id: 5,

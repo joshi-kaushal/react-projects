@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { useGlobalContext } from '../../context';
 import { FaTimes } from 'react-icons/fa'
 import { social, links } from './data'

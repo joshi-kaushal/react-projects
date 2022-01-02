@@ -1,5 +1,4 @@
 import React from 'react'
-import { AiOutlineArrowUp, AiOutlineArrowDown } from 'react-icons/ai'
 import { useGlobalContext } from '../../context'
 
 const CartItem = props => {

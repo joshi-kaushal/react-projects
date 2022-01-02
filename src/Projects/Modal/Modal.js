@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { FaTimes } from 'react-icons/fa'
 import { useGlobalContext } from '../../context'
-import Sidebar from'./Sidebar'
 
 function Modal() {
 	const { isModalOpen, closeModal } = useGlobalContext()

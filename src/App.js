@@ -1,4 +1,3 @@
-import projects from './Projects';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 import Hero from './Components/Hero/Hero';
