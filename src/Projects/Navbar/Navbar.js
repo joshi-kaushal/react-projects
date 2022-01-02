@@ -4,7 +4,7 @@ import { FaBars } from 'react-icons/fa'
 import { links, social } from './data'
 import logo from './logo.svg'
 
-const Navbar = () => {
+const NavbarApp = () => {
 	const [showLinks, setShowLinks] = useState(true);
 	const linksContainerRef = useRef(null);
 	const linksRef = useRef(null);
@@ -68,4 +68,4 @@ const Navbar = () => {
 	)
 }
 
-export default Navbar
+export default NavbarApp

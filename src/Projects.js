@@ -10,7 +10,7 @@ import Slider from '../src/Projects/Slider/Slider'
 import LoremIpsum from '../src/Projects/LoremIpsum/LoremIpsum'
 import ColorGenerator from '../src/Projects/ColorGenerator/ColorGenerator'
 import Grocery from '../src/Projects/Grocery/Grocery'
-import Navbar from '../src/Projects/Navbar/Navbar'
+import NavbarApp from '../src/Projects/Navbar/Navbar'
 import ModalApp from '../src/Projects/Modal/ModalApp'
 import SubMenuApp from '../src/Projects/SubMenus/SubMenuApp'
 import Cart from '../src/Projects/Cart/Cart'
@@ -26,10 +26,10 @@ const projects = [
 	},
 	{
 		id: 2,
-		name: 'Stripe Homepage',
-		slug: '/birthday-reminder',
-		description: 'Clone of the homepage of Stripe',
-		component: <SubMenuApp />
+		name: 'Accordion',
+		slug: '/accordion',
+		description: 'Accordion',
+		component: <Accordion />
 	},
 	{
 		id: 3,
@@ -41,23 +41,86 @@ const projects = [
 	{
 		id: 4,
 		name: 'Modal',
-		slug: '/birthday-reminder',
+		slug: '/modal',
 		description: 'Modal and Sidebar',
 		component: <ModalApp />
 	},
 	{
 		id: 5,
-		name: 'Grocery App',
-		slug: '/birthday-reminder',
-		description: 'Make a grocery list to not forget what you want to buy',
-		component: <Grocery />
+		name: 'Lorem Ipsum Generator',
+		slug: '/lorem-ipsum',
+		description: 'Lorem ipsum dolor sit amet',
+		component: <LoremIpsum />
 	},
 	{
 		id: 6,
 		name: 'Color Generator',
-		slug: '/birthday-reminder',
+		slug: '/color-generator',
 		description: 'Generate a color palette',
 		component: <ColorGenerator />
+	},
+	{
+		id: 7,
+		name: 'Cafe Menu',
+		slug: '/cafe-menu',
+		description: 'Menu for a cafe...',
+		component: <MenuApp/>
+	},
+	{
+		id: 8,
+		name: 'Modal',
+		slug: '/modal',
+		description: 'Modal! :)',
+		component: <ModalApp />
+	},
+	{
+		id: 9,
+		name: 'Navbar',
+		slug: '/navabar',
+		description: 'Well, a Navbar!',
+		component: <NavbarApp />
+	},
+	{
+		id: 10,
+		name: 'Product Reviews',
+		slug: '/product-reviews',
+		description: 'A review slider, but simpler.',
+		component: <Reviews />
+	},
+	{
+		id: 11,
+		name: 'Designation Slider',
+		slug: '/designation-slider',
+		description: 'A slider built without any third party library',
+		component: <Slider />
+	},
+	{
+		id: 12,
+		name: 'Stripe Homepage',
+		slug: '/stripe-homepage',
+		description: 'Clone of the homepage of Stripe',
+		component: <SubMenuApp />
+	},
+	{
+		id:13 ,
+		name: 'Shopping Cart',
+		slug: '/cart',
+		description: 'A shopping cart',
+		component: <Cart/>
+	},
+	{
+		id: 14,
+		name: 'Job Showcase',
+		slug: '/job-showcase',
+		description: 'Show off your jobs in your portfolio',
+		component: <Tabs />
+	},
+	{
+		id: 15,
+		name: 'Tour Planner',
+		slug: '/toor-planner',
+		description: 'Plan your tour with ease',
+		component: <Tours/>
 	},
 ]
 
