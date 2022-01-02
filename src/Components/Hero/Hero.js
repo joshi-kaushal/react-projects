@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 
 import { GoLinkExternal } from 'react-icons/go'
@@ -28,7 +28,7 @@ const RenderCards = (props) => {
 
 const Hero = (props) => {
 	return <main className='bg-palette-background'>
-		<h2 className='font-serif text-center '>Project List</h2>
+		<h2 className='font-serif font-bold text-center'>Project List</h2>
 
 		<div className="grid mx-auto my-0 mt-20 lg:grid-cols-2 xl:grid-cols-3 md:gap-10 w-85vw place-content-center">
 			<RenderCards />
