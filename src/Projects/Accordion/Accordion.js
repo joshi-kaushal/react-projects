@@ -1,9 +1,12 @@
 import React from 'react';
+import { useGlobalContext } from '../../context';
+
 import questions from './data';
 import SingleQuestion from './Question';
 
 function Accordion() {
-
+	const { setBackground } = useGlobalContext()
+	setBackground('bg-purple-600')
 	const RenderQuestions = (props) => {
 		return props.propQuestions.map(question => {
 			return <SingleQuestion question={question} />

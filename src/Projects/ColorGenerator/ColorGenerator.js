@@ -1,9 +1,12 @@
 import React, { useState } from 'react'
+import { useGlobalContext } from '../../context'
 import './index.css'
 import Values from 'values.js'
 import SingleColor from './SingleColor'
 
 function ColorGenerator() {
+	const { setBackground } = useGlobalContext()
+	setBackground('bg-white')
 	const [color, setColor] = useState('')	
 	const [error, setError] = useState(false)
 	const [list, setList] = useState([])
@@ -33,7 +36,7 @@ function ColorGenerator() {
 							color.startsWith('#') ? setColor(e.target.value) : setColor(`#${e.target.value}`)
 						}}
 						placeholder='#12ed23' 
-						className={`${error ? 'border rounded-md border-colorGenerator-ternary' : null} ' bg-gray-100 py-2 px-4 sm:text-sm md:text-2xl rounded-tl-md rounded-bl-md ' `}
+						className={`${error ? 'border rounded-md border-colorGenerator-ternary' : null} ' bg-gray-100 py-2 px-4 sm:text-sm md:text-2xl rounded-tl-md rounded-bl-md' `}
 					/>
 					<button className='px-1 py-2 text-white capitalize border border-transparent cursor-pointer bg-colorGenerator-secondary rounded-tr-md rounded-br-md sm:text-sm md:text-2xl' type='submit'>Generate</button>
 				</form>

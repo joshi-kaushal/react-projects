@@ -1,7 +1,11 @@
 import React, { useState } from 'react'
+import { useGlobalContext } from '../../context'
 import data from './data';
 
 const LoremIpsum = () => {
+	const { setBackground } = useGlobalContext()
+	setBackground('bg-white')
+
 	const [count, setCount] = useState(0)
 	const [text, setText] = useState([])
 
@@ -24,11 +28,11 @@ const LoremIpsum = () => {
 	return(
 		<section className='max-w-2xl mx-auto my-0 mt-20 text-center w-90vw md:w-95vw'>
 			<h3 className='text-2xl font-semibold text-loremColor-primary'>Lorem Ipsum Generator</h3>
-			<form className='flex items-center justify-center mt-8 mb-16 leading-8 capitalize' onSubmit={handleSubmit}>
+			<form className='flex items-center justify-center pb-1 mt-8 mb-16 leading-8 capitalize border-b-2' onSubmit={handleSubmit}>
 				<label htmlFor='amount' className='text-xl text-loremColor-primary'>Paragraphs:</label>
 				<input 
 					id='amount'
-					className='w-16 px-2 py-1 mx-2 my-0 text-xl border-none rounded-md'
+					className='w-16 px-2 py-1 mx-2 my-0 text-xl border border-black rounded-md'
 					type='number' 
 					name='amount' 
 					value={count} 

@@ -11,12 +11,7 @@ const AppContext = React.createContext()
 const AppProvider = ({children}) => {
 	
 	// ! NAVBAR !! 
-	const [palette, setPalette] = useState({
-		"background": "#FFF8F3",
-		"card": "#A3E4DB",
-		"buttons": "#1C6DD0",
-		"extra": "#FED1EF",
-	})
+	const [background, setBackground] = useState('bg-palette-background')
 	
 	// ! - - - - - Slider - - - - - 
 	const [isSidebarOpen, setIsSidebarOpen] = useState(false)
@@ -125,7 +120,7 @@ const AppProvider = ({children}) => {
 	// ! - - - - - Context Provider - - - - - 
 	return 	<AppContext.Provider
 		value={{
-			palette, setPalette,
+			background, setBackground,
 
 			isSidebarOpen, isModalOpen, openModal, closeModal, openSidebar, closeSidebar, 
 

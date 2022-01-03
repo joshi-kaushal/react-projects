@@ -1,8 +1,13 @@
 import React, { useState } from 'react';
+import { useGlobalContext } from '../../context';
+
 import data from './data';
 import List from './List';
 
 function BirthdayReminder() {
+	const { setBackground } = useGlobalContext()
+	setBackground('bg-pink-200')
+	
 	const [people, setPeople] = useState(data);
 
 	return (

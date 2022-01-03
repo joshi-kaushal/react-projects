@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { useGlobalContext } from '../../context'
+
 // import pages
 import Home from './pages/Home'
 
@@ -7,6 +9,9 @@ import Home from './pages/Home'
 import Navbar from './components/Navbar'
 
 function Cocktail() {
+	const { setBackground } = useGlobalContext()
+	setBackground('bg-white')
+
 	return (
 		<>
 			<Navbar />

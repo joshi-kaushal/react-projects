@@ -6,7 +6,7 @@ function Home() {
 	const {openSidebar, openModal} = useGlobalContext()
 	return (
 		<main className='flex items-center justify-center min-h-screen'>
-			<button className='fixed text-4xl duration-1000 ease-in-out bg-transparent border-transparent cursor-pointer top-20 left-12 text-modalColor-primaryLight animate-bounce' onClick={openSidebar}>
+			<button className='fixed text-4xl duration-1000 ease-in-out bg-transparent border-transparent cursor-pointer top-32 left-12 text-modalColor-primaryLight animate-bounce' onClick={openSidebar}>
 				<FaBars onClick={openSidebar}/>
 			</button>
 

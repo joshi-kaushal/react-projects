@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react'
+import { useGlobalContext } from '../../context'
 import List from './List'
 import Alert from './Alert'
 
 function Grocery() {
+	const { setBackground } = useGlobalContext()
+	setBackground('bg-white')
 
 	// Get Items from Local Storage
 	const getLocalStorage = () => {

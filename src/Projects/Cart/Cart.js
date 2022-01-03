@@ -7,8 +7,8 @@ import CartContainer from './CartContainer'
 
 function Cart() {
 	
-	const { loading } = useGlobalContext()
-	
+	const { loading, setBackground } = useGlobalContext()
+	setBackground('bg-cart-primary')
 	if(loading) {
 		return (
 			<div className="mt-20 font-semibold text-center capitalize">

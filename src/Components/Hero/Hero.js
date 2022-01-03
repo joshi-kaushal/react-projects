@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 
 import { GoLinkExternal } from 'react-icons/go'
 
+import { useGlobalContext } from '../../context';
+
 import projects from '../../Projects';
 
 const RenderCards = (props) => {
@@ -27,6 +29,9 @@ const RenderCards = (props) => {
 }
 
 const Hero = (props) => {
+	const {setBackground} = useGlobalContext()
+	setBackground('bg-palette-background')
+	
 	return <main className='bg-palette-background'>
 		<h2 className='font-serif font-bold text-center'>Project List</h2>
 
