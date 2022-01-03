@@ -41,7 +41,7 @@ const projects = [
 	{
 		id: 4,
 		name: 'Grocery',
-		slug: '/grocery-cart',
+		slug: '/grocery',
 		description: 'Shop your groceries',
 		component: <Grocery />
 	},
@@ -118,7 +118,7 @@ const projects = [
 	{
 		id: 15,
 		name: 'Tour Planner',
-		slug: '/toor-planner',
+		slug: '/tour-planner',
 		description: 'Plan your tour with ease',
 		component: <Tours/>
 	},
