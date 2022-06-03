@@ -1,6 +1,7 @@
 # react-projects
 A single repository for all my mini projects I developed during learning React.
 
+## [Live Demo Here](https://clumsyprojects.netlify.app/)
 ## About react-projects
 Creating individual repository for individual projects is fine. But this is why I created a single repo for these projects:
 1. Project scope were too small
@@ -43,4 +44,4 @@ And that's not it! I entirely built this using Tailwind CSS, since I wanted to i
 - `npm i`
 - `npm start`
 ## Live Deployment
-Will do it soon :*)
+[The website is live on Netlify](https://clumsyprojects.netlify.app/)
